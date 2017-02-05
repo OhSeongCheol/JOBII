@@ -92,7 +92,7 @@
     $(".typed").typed({
         strings: ["Jobll Project", "Prototype ver 0.01", "HaHaHa"],
         typeSpeed: 100,
-        backDelay: 900,
+        backDelay: 1000,
         // loop
         loop: true
     });
