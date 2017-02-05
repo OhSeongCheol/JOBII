@@ -39,11 +39,11 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/testquery" , method = {RequestMethod.GET})
-	public ModelAndView regProduct(@ModelAttribute Home entity, HttpServletRequest request, BindingResult errors) throws Exception {
-		ModelAndView mav = new ModelAndView("home");
+	public String regProduct(@ModelAttribute Home entity, HttpServletRequest request, BindingResult errors) throws Exception {
+		//ModelAndView mav = new ModelAndView("home");
 		
 		homeService.create(entity);
 					
-		return mav;
+		return "home";
 	}
 }
